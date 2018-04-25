@@ -24,3 +24,10 @@
 .color-sample-red {
     background-color: #b13138;
 }
+
+.preview-color {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

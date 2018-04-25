@@ -1,0 +1,9 @@
+<color-picker #picker [color]="colorInput || color" (color)="color = $event; colorInput=''; input.value='' "></color-picker>
+
+<h2 [ngStyle]="{'color': colorInput || color }">OR</h2>
+
+<input (keyup)="colorInput = input.value" #input placeholder="Type your color here">
+<br />
+<button (click)="color = black; colorInput = black; input.value='' ">Reset</button>
+
+<color-previewer [color]="colorInput || color"></color-previewer>
